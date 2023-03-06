@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and daisy cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- customizre tailwind  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+      <link rel="stylesheet" href="./style.css">
+    <title>Cara E-com</title>
+</head>
+<body>
+    <header class="bg-slate-200 drop-shadow-lg ">
+        <nav class="w-[90%] mx-auto">
+            <div class="flex">
+                <div class="w-[30%]">
+                  <a class="btn btn-ghost normal-case text-xl"><img src="./img//logo.png" alt=""></a>
+                </div>
+                <div class="w-[70%]">
+                  <ul class=" flex items-center h-full justify-between">
+                    <li class=""><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">contact</a></li>
+                    <!-- <label tabindex="0" class="btn btn-ghost btn-circle">
+                      <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        <span class="badge badge-sm indicator-item">0</span>
+                      </div>
+                    </label> -->
+                  </ul>
+                  
+                </div>
+              </div>
+        </nav>
+    </header>
+    <!-- hero  section start  -->
+    <section class=""> 
+      <div class="containe bgimage">
+        <div class="contain w-[90%] mx-auto h-screen flex items-center ">
+                <div class="">
+                    <h4 class="font-bold md:text-2xl xl:text-2xl lg:text-2xl text-xl mb-2 text-slate-600">Trade-in-offer</h4>
+                    <h1 class="font-bold xl:text-5xl md:text-5xl lg:text-5xl text-3xl">Supper value deal</h1>
+                    <h1 class="font-bold xl:text-5xl md:text-5xl lg:text-5xl text-3xl xl:py-2 md:lg:py-2 py-1 text-[#369E95] ">On all products</h1>
+                    <p class="text-slate-600 font-medium my-2">Save more with coupons & up to 70% off!</p>
+                    <div class="mt-4">
+                        <button class="btnimg"><span class="py-2 text-lg font-semibold text-[#369E95]">Shop Now</span></button>
+                    </div>
+                </div>
+      </div>
+    </section>
+    <!-- hook section -->
+    <section>
+      <div class="w-[90%] mx-auto grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-6 xl:grid-cols-6 gap-4  my-32 py-">
+        <!-- 1st hook  -->
+        
+          <div class="border-solid border border-gray-200 flex flex-col gap-2 py-5 drop-shadow-sm">
+            <figure><img class="w-full p-3" src="./img/features/f1.png" alt=""></figure>
+            <button class="bg-[#FEE0E6] py-1 mx-4 text-[#369E95] font-medium"><a href="">Free Shipping</a></button>
+          </div>
+        
+        <!-- 2nd hook  -->
+        <div class="border-solid border border-gray-200 flex flex-col gap-2 py-5 drop-shadow-sm">
+          <figure><img class="w-full p-3" src="./img/features/f2.png" alt=""></figure>
+          <button class="bg-[#CAEDBE] py-1 mx-4 text-[#369E95] font-medium"><a href="">Online Order</a></button>
+        </div>
+        <!-- 3rd hook  -->
+        <div class="border-solid border border-gray-200 flex flex-col gap-2 py-5 drop-shadow-sm">
+          <figure><img class="w-full p-3" src="./img/features/f3.png" alt=""></figure>
+          <button class="bg-[#D5E9F1] py-1 mx-4 text-[#369E95] font-medium"><a href="">Money Save</a></button>
+        </div>
+        <!-- 4th hook  -->
+        <div class="border-solid border border-gray-200 flex flex-col gap-2 py-5 drop-shadow-sm">
+          <figure><img class="w-full p-3" src="./img/features/f4.png" alt=""></figure>
+          <button class="bg-[#CAD1F7] py-1 mx-4 text-[#369E95] font-medium"><a href="">Promotions</a></button>
+        </div>
+        <!-- 5th hook  -->
+        <div class="border-solid border border-gray-200 flex flex-col gap-2 py-5 drop-shadow-sm">
+          <figure><img class="w-full p-3" src="./img/features/f5.png" alt=""></figure>
+          <button class="bg-[#FEE0E6] py-1 mx-4 text-[#369E95] font-medium"><a href="">Happy Sell</a></button>
+        </div>
+        <!-- 6th hook  -->
+        <div class="border-solid border border-gray-200 flex flex-col gap-2 py-5 drop-shadow-sm">
+          <figure><img class="w-full p-3" src="./img/features/f6.png" alt=""></figure>
+          <button class="bg-[#f5ecec] py-1 mx-4 text-[#369E95] font-medium"><a href="">F24/7 Support</a></button>
+        </div>
+        
+        
+      </div>
+    </section>
+    <!-- feature products  -->
+    <section>
+      <div class="contain w-[90%] mx-auto">
+        <div class="text-center">
+          <h1 class="text-5xl font-bold">Featured Products</h1>
+          <p class="text-slate-300 font-normal py-4">Summer Collection New Modern Design </p>
+        </div>
+        <!-- prodicts card  -->
+        <div class="grid grid-cols-4 gap-5 my-10">
+          
+            <!-- 1st cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/f1.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- 2nd cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/f2.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- 3rd cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/f3.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- 4th cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/f4.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- 5th cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/f5.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- 6th cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/f6.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- 7th cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/f7.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- 8th cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/f8.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full  "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </section>
+            <!-- offer banner  -->
+    <section class="offerBnner my-28">
+      <div class="w-[90%] mx-auto flex justify-center items-center h-full">
+        <div class="text-white text-center">
+          <p class="font-semibold">Hottest Offer</p>
+          <h1 class="text-5xl font-semibold py-5">Up to <span class="text-red-500">70% off</span> All T-shirt & Accessories</h1>
+          <button class="bg-slate-100 py-2 px-6 text-[#369E95] font-semibold btn btn-active hover:bg-[#369E95] hover:text-white">Explore More</button>
+        </div>
+      </div>
+    </section>
+    <!-- new products arrival  -->
+    <section>
+      <div class="contain w-[90%] mx-auto">
+        <div class="text-center">
+          <h1 class="text-5xl font-bold">New Arrivals</h1>
+          <p class="text-slate-300 font-normal py-4">Summer Collection New Modern Design </p>
+        </div>
+        <!-- prodicts card  -->
+        <div class="grid grid-cols-4 gap-5 my-10">
+          
+            <!-- 1st cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/n1.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- 2nd cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/n2.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- 3rd cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/n3.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- 4th cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/n4.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- 5th cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/n5.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- 6th cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/n6.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- 7th cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/n7.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- 8th cart  -->
+            <div class="">
+            <div class="card w-full glass  ">
+              <figure><img src='./img/products/n8.jpg' alt="car!"/></figure>
+              <div class="py-8 px-3 ">
+                <h2 class="text-gray-300">adidas</h2>
+                <h2 class="card-title">Cartoon  T-shirt</h2>
+                <ul class=" flex pt-2">
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                  <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                </ul>               
+                <div class="card-actions justify-between mt-2">
+                  <p class="text-[#369E95] font-semibold">$78</p>
+                  <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full  "><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </section>
+
+    <!-- buy one get one free  -->
+    <section class="my-28">
+      <div class="grid grid-cols-2 w-[90%] mx-auto gap-5">
+        <div class="relative">
+          <figure><img class="" src="./img/banner/b17.jpg" alt=""></figure>
+          <div class="absolute bottom-20 left-8">
+            <p class="text-white">Crazy Deals</p>
+            <h1 class="py-2 font-bold text-xl text-white">Buy 1 Get 1 Free</h1>
+            <p class=" text-white">The best classic dress is on sole at cara</p>
+            <button class="mt-2  btn-outline btn outline-yellow-50  py-2 px-6 text-[#369E95] font-semibold  hover:bg-[#369E95] hover:text-white">Learn More</button>
+          </div>
+        </div>
+        <div class="relative">
+          <figure><img src="./img/banner/b10.jpg" alt=""></figure>
+          <div class="absolute bottom-20 left-8">
+            <p class="text-white">Spring/Summer</p>
+            <h1 class="py-2 font-bold text-xl text-white">Upcoming Season</h1>
+            <p class=" text-white">The best classic dress is on sole at cara</p>
+            <button class="mt-2   btn outline-yellow-50  py-2 px-6  font-semibold bg-[#369E95] text-white">Collection</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- All seasons  -->
+    <section class=" my-28">
+      <div class="w-[90%] mx-auto ">
+        <div class="grid grid-cols-7 gap-5 ">
+          <div class="col-span-2 cont">
+          </div>
+          <div class="col-span-3 const2">
+          </div>
+          <div class="col-span-2 const3">
+            <!-- <figure><img  src="./img/banner/b18.jpg" alt=""></figure> -->
+          </div>
+        </div>
+      </div>
+    </section>
+            
+    
+          
+
+    <script src="./script.js"></script>
+</body>
+</html>
