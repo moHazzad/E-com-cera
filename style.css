@@ -53,3 +53,28 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.news{
+    width: 100%;
+    height: 100px;
+    background-image: url(./img/banner/b1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.geeks {
+    
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.geeks img {
+    /* overflow: hidden; */
+    transition: 0.5s all ease-in-out;
+}
+
+.geeks:hover img {
+    transform: scale(1.2);
+}
