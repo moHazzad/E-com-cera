@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .bgimage {
     background-image: url("/img/hero4.png");
@@ -62,6 +63,23 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.rel1{
+    background-image: url(./img/banner/b17.jpg);
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rel2{
+    background-image: url(./img/banner/b10.jpg);
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 
 .geeks {
