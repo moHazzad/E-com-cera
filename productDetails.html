@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and daisy cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- customizre tailwind  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>product details</title>
+    
+</head>
+<body>
+     <!-- header section  -->
+     <header class="bg-slate-200 drop-shadow-lg ">
+        <nav class="w-[90%] mx-auto">
+            <div class="flex">
+                <div class="w-[30%]">
+                  <a class="btn btn-ghost normal-case text-xl"><img src="./img//logo.png" alt=""></a>
+                </div>
+                <div class="w-[70%]">
+                  <ul class=" flex items-center h-full justify-between">
+                    <li class=""><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">contact</a></li>
+                    <!-- <label tabindex="0" class="btn btn-ghost btn-circle">
+                      <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        <span class="badge badge-sm indicator-item">0</span>
+                      </div>
+                    </label> -->
+                  </ul>
+                  
+                </div>
+              </div>
+        </nav>
+    </header>
+    <!-- products section  -->
+    <section>
+        <div class="w-[90%] mx-auto">
+            <div>
+                <div class="grid xl:grid-cols-5 lg:grid-cols-5 xl:gap-5 lg:gap-5 gap-3">
+                
+                    <div class=" xl:col-span-2  lg:col-span-2">
+                        <div class="flex flex-col gap-2">
+                            <div class="">
+                                <figure><img src="./img//products/f3.jpg" alt=""></figure>
+                            </div>
+                            <div class="">
+                                <div class="flex gap-2">
+                                <figure><img src="./img//products/f4.jpg" alt=""></figure>
+                                <figure><img src="./img//products/f5.jpg" alt=""></figure>
+                                <figure><img src="./img//products/f6.jpg" alt=""></figure>
+                                <figure><img src="./img//products/f2.jpg" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class=" xl:col-span-3 lg:col-span-3 h-full">
+                        <div class="  flex flex-col items-center h-full">
+                            <div class="py-10   ">
+                                <p class="text-slate-400 font-semibold mb-3">Home/T-shirt</p>
+                                <h1 class="text-2xl font-bold mb-4">Men's Fashion T-shirt</h1>
+                                <h2 class="text-2xl font-bold mb-6 text-slate-400">$139.30</h2>
+                                <select class="outline-none border-violet-100 mb-5 px-2 py-2 w-44 text-slate-600" name="from"  required>
+                                    <option value="" hidden>Please Select size</option>
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                    <option>XXL</option>
+                                </select>
+                                <div class="flex gap-3 mb-5">
+                                    <input class="  border-2 w-20 px-2 text-slate-300   " type="number" value="1">
+                                    <button class="py-2 px-5 bg-[#369E95] text-white font-semibold btn border-none rounded-sm ">Add to Cart</button>
+                                </div>
+                                <h1 class="text-2xl font-semibold mb-5  ">Products Details</h1>
+                                <p class="text-slate-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quasi aut vero voluptates neque dolorum voluptate veritatis incidunt iste, necessitatibus unde quidem laboriosam inventore error assumenda aliquid ea, quod voluptatum repellendus illo? Corrupti itaque dolor asperiores et, rerum optio enim?</p>
+        
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+        </div>
+    </section>
+   
+
+     <!-- shop product section  -->
+     <section>
+        <div class="w-[90%] mx-auto">
+            <div class="grid my-10 xl:grid-cols-4 xl:gap-5  md:grid-cols-3 md:gap-5 grid-cols-2 gap-3">
+          
+                <!-- 1st cart  -->
+                <div class="mb-5">
+                <div class="card w-full glass overflow-hidden geeks">
+                  <div class="">
+    
+                    <figure ><img class="" src='./img/products/f1.jpg' alt="car!"/></figure>
+                  </div>
+                  <div class="py-8 px-3 ">
+                    <h2 class="text-gray-300">adidas</h2>
+                    <h2 class="card-title">Cartoon  T-shirt</h2>
+                    <ul class=" flex pt-2">
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                    </ul>               
+                    <div class="card-actions justify-between mt-2">
+                      <p class="text-[#369E95] font-semibold">$78</p>
+                      <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+                <!-- 2nd cart  -->
+                <div class="">
+                <div class="card w-full glass overflow-hidden geeks ">
+                  <figure><img src='./img/products/f2.jpg' alt="car!"/></figure>
+                  <div class="py-8 px-3 ">
+                    <h2 class="text-gray-300">adidas</h2>
+                    <h2 class="card-title">Cartoon  T-shirt</h2>
+                    <ul class=" flex pt-2">
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                    </ul>               
+                    <div class="card-actions justify-between mt-2">
+                      <p class="text-[#369E95] font-semibold">$78</p>
+                      <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <!-- 3rd cart  -->
+                <div class="">
+                <div class="card w-full glass  overflow-hidden geeks">
+                  <figure><img src='./img/products/f3.jpg' alt="car!"/></figure>
+                  <div class="py-8 px-3 ">
+                    <h2 class="text-gray-300">adidas</h2>
+                    <h2 class="card-title">Cartoon  T-shirt</h2>
+                    <ul class=" flex pt-2">
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                    </ul>               
+                    <div class="card-actions justify-between mt-2">
+                      <p class="text-[#369E95] font-semibold">$78</p>
+                      <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <!-- 4th cart  -->
+                <div class="">
+                <div class="card w-full glass  overflow-hidden geeks">
+                  <figure><img src='./img/products/f4.jpg' alt="car!"/></figure>
+                  <div class="py-8 px-3 ">
+                    <h2 class="text-gray-300">adidas</h2>
+                    <h2 class="card-title">Cartoon  T-shirt</h2>
+                    <ul class=" flex pt-2">
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-yellow-400"> <i class="fa-solid fa-star"></i></li>
+                      <li class="text-gray-400"> <i class="fa-solid fa-star"></i></li>
+                    </ul>               
+                    <div class="card-actions justify-between mt-2">
+                      <p class="text-[#369E95] font-semibold">$78</p>
+                      <button class="py-1 px-2 text-[#369E95] hover:bg-[#369E95] hover:text-white rounded-full "><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- newsletr banner  -->
+    <section class="news h-full py-16 xl:mb-24 lg:mb-28 md:mb-28 mb-20">
+        <div class="w-[90%] mx-auto flex xl:flex-row lg:flex-row md:flex-row flex-col gap-5 text-center justify-between items-center px-2 ">
+          <div class="text-white"> 
+            <h1 class="text-3xl font-bold my-1">Sign up for newsletr</h1>
+            <p>Get E-mail update about our latest shop and <span class="text-yellow-400">Special Offer</span></p>
+          </div>
+          <div>
+            <div class="flex">
+              <input class="xl:py-2 lg:py-2 md:py-2 py-1  px-1 rounded-l-sm" type="text" placeholder="Enter Your Email">
+              <button class="bg-[#369E95] xl:py-2 lg:py-2 md:py-2 py-1 px-5 rounded-r-sm text-white">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer section start  -->
+    
+      <footer class=" py-7">
+        <div class="w-[90%] mx-auto">
+          <div class=" ">
+            <div class="grid grid-cols-6" >
+              <div class="xl:col-span-2 lg:col-span-2  col-span-full ">
+                <figure><img class="btn btn-ghost p-0 " src="./img/logo.png" alt=""></figure>
+                <h5  class="font-bold my-2">Contact</h5>
+                <div class="my-3">
+                    <span class="font-semibold">Address:</span><p> 534 Wellington Read Street 32 San Fanco</p>
+                    <span class="font-semibold">Phone:</span><p>+000-111-32323/ +000-3434-12111</p>                 
+                </div>
+                <di v>
+                  <div class="my-2">
+                    <h1 class="font-bold ">Follow US</h1>
+                  </div>
+                  <div class="cursor-pointer">
+                    <i class="fa-brands fa-facebook-f pr-2"></i>
+                    <i class="fa-brands fa-instagram px-2"></i>
+                    <i class="fa-brands fa-twitter px-2"></i>
+                    <i class="fa-brands fa-tiktok px-2"></i>
+                  </div>
+                </div>
+                <!-- about part  -->
+                <div class="xl:col-span-1 lg:col-span-1  col-span-3 xl:my-0 lg:my-0 my-10">
+                  <h1 class="font-bold">About</h1>
+                  <div class="my-3">
+                    <p class="mb-1">About Us </p>
+                    <p class="mb-1">Delivery Information</p>
+                    <p class="mb-1">Privacy Policy</p>
+                    <p class="mb-1">Term & Condition</p>
+                    <p class="mb-1">Contact Us</p>
+
+                  </div>
+                </div>
+                <!-- My account  part  -->
+                <div class="xl:col-span-1 lg:col-span-1  col-span-3  xl:my-0 lg:my-0 my-10">
+                  <h1 class="font-bold">My Account</h1>
+                  <div class="my-3">
+                    <p class="mb-1">Sign In </p>
+                    <p class="mb-1">View Cart</p>
+                    <p class="mb-1">My Wishlist</p>
+                    <p class="mb-1">Track My Order</p>
+                    <p class="mb-1">Help</p>
+
+                  </div>
+                </div>
+                <!-- Install app  part  -->
+                <div class="xl:col-span-2 lg:col-span-2  col-span-full ">
+                  <h1 class="font-bold">Install App</h1>
+                  <div class="my-3">
+                    <p class="mb-1">From App Store or Google Play</p>
+                    <div class="flex gap-1 my-2">
+                      <figure><img class="btn btn-outline hover:bg-transparent" src="./img/pay/play.jpg" alt=""></figure>
+                      <figure><img class="btn btn-outline hover:bg-transparent" src="./img/pay/app.jpg" alt=""></figure>
+                    </div>
+                    <p class="mb-1">Secure Payment Getaway</p>
+                    <figure><img class="py-4" src="./img/pay/pay.png" alt=""></figure>
+                    
+
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+    
+
+
+    
+</body>
+</html>

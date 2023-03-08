@@ -96,3 +96,30 @@ body{
 .geeks:hover img {
     transform: scale(1.2);
 }
+
+/* shopping page  */
+.shop{
+    background-image: url(./img/banner/b1.jpg);
+    height: 370px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* blog page  */
+.blog{
+    background-image: url(./img/banner/b19.jpg);
+    height: 370px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* about page  */
+.about{
+    background-image: url(./img/about/banner.png);
+    height: 370px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

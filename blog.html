@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and daisy cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- customizre tailwind  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>Blog</title>
+</head>
+<body>
+<!-- header section  -->
+<header class="bg-slate-200 drop-shadow-lg ">
+    <nav class="w-[90%] mx-auto">
+        <div class="flex">
+            <div class="w-[30%]">
+              <a class="btn btn-ghost normal-case text-xl"><img src="./img//logo.png" alt=""></a>
+            </div>
+            <div class="w-[70%]">
+              <ul class=" flex items-center h-full justify-between">
+                <li class=""><a href="./index.html">Home</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./about.html">Blog</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">contact</a></li>
+                <!-- <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <div class="indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    <span class="badge badge-sm indicator-item">0</span>
+                  </div>
+                </label> -->
+              </ul>
+              
+            </div>
+          </div>
+    </nav>
+</header>
+
+<!-- banner section  -->
+<section class="blog flex justify-center items-center mb-20">
+    <main class="w-[90%] mx-auto">
+        <div class="text-slate-300 text-center ">
+            <h1 class="text-6xl font-bold mb-3">#readmore</h1>
+            <p class="text-xl  text-slate-300">Read All Case Studies About Our Product  </p>
+        </div>
+    </main>
+</section>
+<!-- all blogs section  -->
+<section class="mb-20">
+    <div class="w-[90%] mx-auto">
+       <div class="flex flex-col gap-10">
+        <div class="flex gap-4 xl:flex-row lg:flex-row md:flex-row flex-col">
+            <div class="h-80 overflow-hidden">
+                <h1 class="font-bold text-3xl text-slate-300 " >13/01</h1>
+                <figure><img class="" src="./img/blog/b1.jpg" alt="" ></figure>
+            </div>
+            <div class=" flex flex-col justify-center  ">
+                <h1 class="text-xl font-semibold  my-2">The Cotton Zip Up </h1>
+                <p class="text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat hic cupiditate recusandae optio velit exercitationem? Beatae esse exercitationem dolorem?</p>
+                <div class="mt-3 text-lg ">
+                    <button class="pointer">continue Reading...</button>
+                </div>
+            </div>
+        </div>
+        <!-- 2nd blog  -->
+        <div class="flex gap-4 xl:flex-row lg:flex-row md:flex-row flex-col">
+            <div class="h-80 overflow-hidden">
+                <h1 class="font-bold text-3xl text-slate-300 " >13/04</h1>
+                <figure><img class="" src="./img/blog/b2.jpg" alt=""></figure>
+            </div>
+            <div class=" flex flex-col justify-center ">
+                <h1 class="text-xl font-semibold  my-2">How To Style a Quiff </h1>
+                <p class="text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat hic cupiditate recusandae optio velit exercitationem? Beatae esse exercitationem dolorem?</p>
+                <div class="mt-3 text-lg ">
+                    <button class="pointer">continue Reading...</button>
+                </div>
+            </div>
+        </div>
+        <!-- 3rd blog  -->
+        <div class="flex gap-4 xl:flex-row lg:flex-row md:flex-row flex-col">
+            <div class="h-80 overflow-hidden">
+                <h1 class="font-bold text-3xl text-slate-300 " >12/01</h1>
+                <figure><img class="" src="./img/blog/b3.jpg" alt=""></figure>
+            </div>
+            <div class=" flex flex-col justify-center ">
+                <h1 class="text-xl font-semibold  my-2">Must Have Girl Items</h1>
+                <p class="text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat hic cupiditate recusandae optio velit exercitationem? Beatae esse exercitationem dolorem?</p>
+                <div class="mt-3 text-lg ">
+                    <button class="pointer">continue Reading...</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-4 xl:flex-row lg:flex-row md:flex-row flex-col">
+            <div class="h-80 overflow-hidden">
+                <h1 class="font-bold text-3xl text-slate-300 " >16/11</h1>
+                <figure><img class="" src="./img/blog/b4.jpg" alt=""></figure>
+            </div>
+            <div class=" flex flex-col justify-center ">
+                <h1 class="text-xl font-semibold  my-2">Runway Inspired Trends</h1>
+                <p class="text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat hic cupiditate recusandae optio velit exercitationem? Beatae esse exercitationem dolorem?</p>
+                <div class="mt-3 text-lg ">
+                    <button class="pointer">continue Reading...</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-4 xl:flex-row lg:flex-row md:flex-row flex-col">
+            <div class="h-80 overflow-hidden">
+                <h1 class="font-bold text-3xl text-slate-300 " >16/11</h1>
+                <figure><img class="" src="./img/blog/b6.jpg" alt=""></figure>
+            </div>
+            <div class=" flex flex-col justify-center ">
+                <h1 class="text-xl font-semibold  my-2">AW20 Menswear Trends</h1>
+                <p class="text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat hic cupiditate recusandae optio velit exercitationem? Beatae esse exercitationem dolorem?</p>
+                <div class="mt-3 text-lg ">
+                    <button class="pointer">continue Reading...</button>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+</section>
+<!-- pagination section  -->
+<section class="h-1/3 flex justify-center items-center text-center mb-16">
+    <div>
+        <button class="bg-[#369E95] py-2 px-4 rounded-sm text-white font-semibold">1</button>
+        <button class="bg-[#369E95] py-2 px-4 rounded-sm text-white font-semibold">2</button>
+        <button class="bg-[#369E95] py-2 px-4 rounded-sm text-white font-semibold">3</button>
+        <button class="bg-[#369E95] py-2 px-4 rounded-sm text-white font-semibold"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+</section>
+
+<!-- newsletr banner  -->
+<section class="news h-full py-16 xl:mb-24 lg:mb-28 md:mb-28 mb-20">
+    <div class="w-[90%] mx-auto flex xl:flex-row lg:flex-row md:flex-row flex-col gap-5 text-center justify-between items-center px-2 ">
+      <div class="text-white"> 
+        <h1 class="text-3xl font-bold my-1">Sign up for newsletr</h1>
+        <p>Get E-mail update about our latest shop and <span class="text-yellow-400">Special Offer</span></p>
+      </div>
+      <div>
+        <div class="flex">
+          <input class="xl:py-2 lg:py-2 md:py-2 py-1  px-1 rounded-l-sm" type="text" placeholder="Enter Your Email">
+          <button class="bg-[#369E95] xl:py-2 lg:py-2 md:py-2 py-1 px-5 rounded-r-sm text-white">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- footer section start  -->
+    
+<footer class=" py-7">
+    <div class="w-[90%] mx-auto">
+      <div class=" ">
+        <div class="grid grid-cols-6" >
+          <div class="xl:col-span-2 lg:col-span-2  col-span-full ">
+            <figure><img class="btn btn-ghost p-0 " src="./img/logo.png" alt=""></figure>
+            <h5  class="font-bold my-2">Contact</h5>
+            <div class="my-3">
+                <span class="font-semibold">Address:</span><p> 534 Wellington Read Street 32 San Fanco</p>
+                <span class="font-semibold">Phone:</span><p>+000-111-32323/ +000-3434-12111</p>                 
+            </div>
+            <di v>
+              <div class="my-2">
+                <h1 class="font-bold ">Follow US</h1>
+              </div>
+              <div class="cursor-pointer">
+                <i class="fa-brands fa-facebook-f pr-2"></i>
+                <i class="fa-brands fa-instagram px-2"></i>
+                <i class="fa-brands fa-twitter px-2"></i>
+                <i class="fa-brands fa-tiktok px-2"></i>
+              </div>
+            </div>
+            <!-- about part  -->
+            <div class="xl:col-span-1 lg:col-span-1  col-span-3 xl:my-0 lg:my-0 my-10">
+              <h1 class="font-bold">About</h1>
+              <div class="my-3">
+                <p class="mb-1">About Us </p>
+                <p class="mb-1">Delivery Information</p>
+                <p class="mb-1">Privacy Policy</p>
+                <p class="mb-1">Term & Condition</p>
+                <p class="mb-1">Contact Us</p>
+
+              </div>
+            </div>
+            <!-- My account  part  -->
+            <div class="xl:col-span-1 lg:col-span-1  col-span-3  xl:my-0 lg:my-0 my-10">
+              <h1 class="font-bold">My Account</h1>
+              <div class="my-3">
+                <p class="mb-1">Sign In </p>
+                <p class="mb-1">View Cart</p>
+                <p class="mb-1">My Wishlist</p>
+                <p class="mb-1">Track My Order</p>
+                <p class="mb-1">Help</p>
+
+              </div>
+            </div>
+            <!-- Install app  part  -->
+            <div class="xl:col-span-2 lg:col-span-2  col-span-full ">
+              <h1 class="font-bold">Install App</h1>
+              <div class="my-3">
+                <p class="mb-1">From App Store or Google Play</p>
+                <div class="flex gap-1 my-2">
+                  <figure><img class="btn btn-outline hover:bg-transparent" src="./img/pay/play.jpg" alt=""></figure>
+                  <figure><img class="btn btn-outline hover:bg-transparent" src="./img/pay/app.jpg" alt=""></figure>
+                </div>
+                <p class="mb-1">Secure Payment Getaway</p>
+                <figure><img class="py-4" src="./img/pay/pay.png" alt=""></figure>
+                
+
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
+
