@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and daisy cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- customizre tailwind  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+      <link rel="stylesheet" href="./style.css">
+    <title>Cara E-com</title>
+</head>
+<body>
+    <header class="bg-slate-200 drop-shadow-lg ">
+        <nav class="w-[90%] mx-auto">
+            <div class="flex">
+                <div class="w-[30%]">
+                  <a class="btn btn-ghost normal-case text-xl"><img src="./img//logo.png" alt=""></a>
+                </div>
+                <div class="w-[70%]">
+                  <ul class=" flex items-center h-full justify-between">
+                    <li class=""><a href="#">Home</a></li>
+                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#">contact</a></li>
+                    <!-- <label tabindex="0" class="btn btn-ghost btn-circle">
+                      <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        <span class="badge badge-sm indicator-item">0</span>
+                      </div>
+                    </label> -->
+                  </ul>
+                  
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <!-- banner section  -->
+    <section class="about flex justify-center items-center">
+        <main class="w-[90%] mx-auto">
+            <div class="text-slate-300 text-center ">
+                <h1 class="text-6xl font-bold mb-3">#cart</h1>
+                <p class="text-xl  text-slate-300">Save more with coupon & up to 70% off </p>
+            </div>
+        </main>
+    </section>
+
+    <section>
+        <div class="w-[90%] mx-auto">
+            <div class="overflow-x-auto">
+                <table class="table table-zebra w-full">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th>Remove</th>
+                      <th>Image</th>
+                      <th>product</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th>Subtotal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <th>1</th>
+                      <td>Cy Ganderton</td>
+                      <td>Quality Control Specialist</td>
+                      <td>$599</td>
+                      <td><input type="number" placeholder="1"></td>
+                      <td>$1212</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+        </div>
+    </section>
+
+
+    
+   
+
+    
+  
+    
+    
+          
+
+    <script src="./script.js"></script>
+</body>
+</html>
